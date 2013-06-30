@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row-fluid">
+        <div>
+            <div class="home">
+                <h2>Demo Videos!</h2>
+            </div>
+
+            <form class="form-horizontal" name="videoForm">
+                <div class="row">
+                    <div class="control-group">
+                        <label class="control-label" for="genre">Genre</label>
+
+                        <div class="controls">
+                            <select id="genre" name="genre" ng-model="selectedGenre"
+                                    ng-options="genre.key as genre.value for genre in genreList | filter:$viewValue"
+                                    ng-change="changeGenre(selectedGenre)">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row spacer">
+                    <div class="span4"></div>
+                    <div class="span4"></div>
+                    <div class="span4"></div>
+                </div>
+
+                <div class="row" data-ng-repeat="row in rows">
+                    <div class="col span9" data-ng-repeat="col in cols">
+                        <img ng-src="{{ videos[$parent.$index * numColumns + $index].image_url}}" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>    <!-- /row-fluid -->
+    </div>  <!-- /container -->
+
+    <div class="modal-footer">
+        <div class="control-group">
+            <div class="controls form-inline">
+                <input type="text" id="loadMoreMax" class="input-small" placeholder="More Videos"
+                       ng-model="loadMoreMax">
+                <button ng-click="loadMore();" class="btn btn-primary">Load More</button>
+            </div>
+        </div>
+    </div>
