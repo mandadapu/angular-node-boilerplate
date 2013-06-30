@@ -1,5 +1,5 @@
 {
-  "name": "vevo",
+  "name": "angular-node-boilerplate",
   "version": "0.0.0",
   "dependencies": {
     "express": "3.0.3",
