@@ -1,4 +1,4 @@
-var resource = require('./resource');
+var resource = require('../app_modules/resource');
 log = require('../config/log-config'),
 
 module.exports = function(app){

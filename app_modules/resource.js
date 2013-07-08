@@ -1,5 +1,5 @@
 var config = require('../config/app-config').config,
-restHandler = require('/rest-handler');
+restHandler = require('./rest-handler');
 
 exports.video = restHandler.handle( config.vevoApiHost, config.vevoApiPort,
 config.vevoUri + '/video/list.json');

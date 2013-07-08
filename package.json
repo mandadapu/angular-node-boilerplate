@@ -13,10 +13,18 @@
     "gm": "1.9.1"
   },
   "devDependencies": {
+  "mocha"       : "*"
+  , "should"      : "*"
+  , "sinon"       : "*"
+  , "zombie"      : "*"
+  , "cucumber"    : "*"
+  , "html5"       : "*",
+    "cucumber": "latest",
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-jshint": "~0.6.0"
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-connect":"*"
   },
   "engines": {
     "node": ">=0.10.10"

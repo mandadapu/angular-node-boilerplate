@@ -1,4 +1,5 @@
-var resource = require('./resource');
+var resource = require('../app_modules/resource');
+
 
 module.exports = function(app){
     app.get('/api/genre', function(req, res){

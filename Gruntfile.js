@@ -32,10 +32,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+//    grunt.loadNpmTasks('grunt-connect');
     //default tasks to run
     //grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
-
-    grunt.registerTask('development', ['jshint']);
+//    grunt.registerTask("cucumber", ["connect", "cucumber"]);
+    grunt.registerTask('development', ['jshint',"cucumber"]);
     grunt.registerTask('production', ['jshint', 'concat', 'uglify']);
 
 }
